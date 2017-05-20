@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false">
+    <WebView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/webViewProductImageListOfProducts"
+
+
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Productname"
+        android:textAllCaps="true"
+        android:textStyle="bold|italic"
+        android:textSize="15dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/textViewProductName"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/webViewProductImageListOfProducts"
+        android:layout_toEndOf="@+id/webViewProductImageListOfProducts"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewPrice"
+            android:text="Price"
+            android:layout_alignBaseline="@+id/textViewDescription"
+            android:layout_alignBottom="@+id/textViewDescription"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:id="@+id/textViewDescription"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/textViewProductName"
+        android:layout_alignLeft="@+id/textViewProductName"
+        android:layout_alignStart="@+id/textViewProductName" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        android:id="@+id/buttonGo"
+        android:layout_below="@+id/textViewProductName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="56dp" />
+
+
+</RelativeLayout>
